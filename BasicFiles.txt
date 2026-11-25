@@ -1,0 +1,21 @@
+complex_visualizer/
+│
+├── main.py
+│
+├── complex_parser.py
+├── numeric_engine.py
+├── symbolic_engine.py
+│
+├── function_parser.py
+├── domain_parser.py
+├── math_engine.py
+│
+├── view_2d.py
+├── view_3d.py
+│
+└── tests/
+    ├── test_complex_parser.py
+    ├── test_numeric_engine.py
+    ├── test_symbolic_engine.py
+    ├── test_function_parser.py
+    └── test_domain_parser.py
