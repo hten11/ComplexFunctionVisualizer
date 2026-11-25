@@ -1,0 +1,81 @@
+complex_mapping/
+│
+├── main.py
+│
+├── complex_parser.py
+├── numeric_engine.py
+├── symbolic_engine.py
+│
+├── function_parser.py
+├── domain_parser.py
+├── math_engine.py
+│
+├── view_2d.py
+├── view_3d.py
+│
+├── requirements.txt
+│
+└── tests/
+
+[복소평면 함수 대응 프로그램 - 파일별 역할]
+
+1. main.py
+- 프로그램 실행
+- 전체 기능 연결
+- 사용자 인터페이스 관리
+
+2. complex_parser.py
+- 복소수 입력 해석
+- 복소수 문자열을 복소수 객체로 변환
+- 복소수 입력 오류 처리
+
+3. numeric_engine.py
+- 복소수 수치 계산
+- 복소수 사칙연산 및 거듭제곱
+- 실제 숫자를 이용한 계산
+
+4. symbolic_engine.py
+- 복소수 기호 계산
+- 수식의 정리 및 변형
+- SymPy를 이용한 기호 연산
+
+5. function_parser.py
+- 복소함수 입력 해석
+- 기본 함수 선택 기능
+- 사용자 함수식 검증
+- 기존 계산 엔진과 연결
+
+6. domain_parser.py
+- 정의역 방정식 및 부등식 입력 해석
+- 정의역 조건 분석
+- 정의역 조건을 계산 가능한 형태로 변환
+
+7. math_engine.py
+- 정의역 판정
+- 복소함수 계산 통합
+- 정의역 표본 생성
+- 입력점과 출력점의 대응 계산
+
+8. view_2d.py
+- 2D 복소평면 시각화
+- 정의역 평면과 공역 평면 표시
+- 입력점 및 대응점 표시
+- 입력점 드래그
+- 출력점 자취 표시
+
+9. view_3d.py
+- 3D 복소평면 시각화
+- 두 복소평면의 공간 배치
+- 입력점과 출력점 표시
+- 대응점을 연결하는 선 표시
+- 정의역과 치역의 도형 표현
+
+10. requirements.txt
+- 프로그램에 필요한 외부 라이브러리 목록
+- 설치해야 할 라이브러리와 버전 관리
+
+11. tests/
+- 각 파일의 기능 테스트
+- 계산 결과 검증
+- 잘못된 입력 테스트
+- 오류 및 예외 처리 테스트
